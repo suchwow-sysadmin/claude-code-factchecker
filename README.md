@@ -1,4 +1,4 @@
-# 🐾 Claude Code Factchecker
+# ✅ Claude Code Fact Checker
 
 > Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai)
 > for nuanced, context-sensitive, AI-powered fact-checking that doesn’t just
@@ -29,7 +29,7 @@
 
 ---
 
-## 📝 For Journalists, Writers, and General Valuers of Facts Wishing to Avoid MCP Servers
+## 📝 For Journalists, Writers, and Valuers of Consensus Reality Wishing to Avoid MCP Servers
 
 **Jump to:**
 [👉 Easy Mode Instructions (for Non-Technical Users)](#easy-mode-no-mcp-server)
@@ -50,17 +50,27 @@ understanding MCP servers. Just ask it!**
 
 ## 🍌 Demo File: "Cavendish Catastrophe"
 
-As always, we strive to entertain.
+We strive to entertain.
 
 - [bad_Ai_essay.md](./Bad_Ai_Essay.md)
 
-## What You Need (Check These First)
+More fully-featured demo videos are planned.
 
-- Anthropic Claude subscription (~$20/month) - [Sign up](https://claude.ai/)
+## What You Need To Get Started
+
+- Anthropic Claude subscription/trial (~$20/month if no free trial, very much
+  worth it) - [Sign up](https://claude.ai/)
 - A terminal (typing window). These steps use the free Warp Terminal
-  ([download](https://www.warp.dev/)).
+  ([download](https://www.warp.dev/)), which is AI-enabled and highly
+  recommended as it can perform all setup for you.
 - This fact-checker folder, unzipped, on your Desktop
 - Your draft file to check (put it in the same folder)
+- A recognition that the Windows ecosystem charges you for the cheaper hardware
+  by locking you as much as they can into a Windows-software-only ecosystem,
+  which does not at this time release AI tools even remotely as good as Claude
+  Code.
+- To enjoy these capabilities on Windows, you'll need to install a lot of extra
+  stuff - Warp Terminal can guide you through several options.
 
 ---
 
