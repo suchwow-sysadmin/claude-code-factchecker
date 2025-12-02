@@ -1,14 +1,56 @@
-# AI Fact-Checker Skill for Claude Code
+# 🐾 Claude Code Factchecker
 
-Simple fact-checking for non-technical writers. Claude reads this folder to
-learn how to check your draft.
+> Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai/)
+> for nuanced, context-sensitive, AI-powered fact-checking that doesn’t just
+> check a link—**it browses, crawls, clicks, and understands.**
 
-Ye who doubt; prepare to be amazed. Life is about to change for the
-enormously-better.
+> **Skip to [Easy Mode](#easy-mode-no-mcp-server) below if you're not familiar
+> with MCP! (Manual review of Claude-provided URLs strongly advised.)**
 
-> This is not an app. It is a folder of instructions Claude reads.
+> This is not an app. It is a folder of instructions Claude reads. Read more
+> here on Claude [_skills_](https://claude.com/blog/skills).
 
 ---
+
+## 🚀 For Technical Users & Early Adopters (MCP Server Required)
+
+- **Magic Mode:** Claude + MCP = automated, multi-step, contextual
+  fact-checking.
+- Requires:
+  - MCP server (tested with Hyperbrowser via Docker Desktop)
+  - Strong opinions regarding terminal applications
+- Features:
+
+  - Follows links, clicks through, verifies in real-time.
+  - Context-aware suggestions (not just “true/false”).
+  - Modular—bring your own agentic browsing stack.
+
+- [**Set up and run Magic Mode**](#magic-mode-mcp-setup)
+
+---
+
+## 📝 For Journalists, Writers, and General Valuers of Facts Wishing to Avoid MCP Servers
+
+**Jump to:**
+[👉 Easy Mode Instructions (for Non-Technical Users)](#easy-mode-no-mcp-server)
+
+---
+
+# [Easy Mode (No MCP Server)](#easy-mode-no-mcp-server)
+
+- No MCP, no automation.
+- Just Claude + your terminal.
+- Still lets you check sources, catch errors, and get context—but you’ll need to
+  review URLs manually.
+
+**Claude Code can directly assist you with installing, connecting, and
+understanding MCP servers. Just ask!**
+
+---
+
+## Demo Files
+
+- [bad_Ai_essay.md](./Bad_Ai_Essay.md)
 
 ## What You Need (Check These First)
 
@@ -20,21 +62,7 @@ enormously-better.
 
 ---
 
-## Quick Path (Overview)
-
-1. Download the ZIP, unzip it, and place the `fact-checker-skill-test-main`
-   folder on your Desktop.
-2. Open Warp. Type `cd ` then drag the folder into Warp. Press Enter.
-3. Install and start Claude Code: type `claude`. If asked, follow the prompts at
-   [claude.ai/code](https://claude.ai/code) to finish setup.
-4. First time only: type `/init` and press Enter.
-5. Put your draft file in the folder. Say: `Please fact-check myDraft.md`.
-
----
-
-## Step-by-Step (Detailed)
-
-### Step 1: Get the Folder
+## Step 1: Get the Folder
 
 1. On this GitHub page, click the green **Code** button.
 2. Click **Download ZIP**.
@@ -85,16 +113,15 @@ visit [claude.ai/code](https://claude.ai/code) and follow the prompts again.
 Did it work? Claude says it scanned the folder and found the fact-checker skill.
 You only do `/init` once per folder.
 
-### Step 6: Fact-Check Your Draft (every time)
+### Step 6: Test Fact-Checking
 
-1. Put your draft file in the `fact-checker-skill-test-main` folder (or use
-   `bad_AI_essay.md` as a test).
-2. In Claude, say: `Please fact-check bad_AI_essay.md`
-3. Claude will read the file and give you a report.
+1. In Claude, say: `Please fact-check bad_AI_essay.md`
+2. Claude will read the file and give you a report - with citations!
 
 Did it work? You see a report with ✅ ⚠️ ❌ next to sources and claims.
 
----
+_Note: Some markdown viewers do not render the report links correctly. Use
+Warp's built-in Markdown viewer for best results._
 
 ## What It Checks
 
@@ -119,56 +146,44 @@ Did it work? You see a report with ✅ ⚠️ ❌ next to sources and claims.
 
 ---
 
-## Example Session
+# Demo Session
 
-```
 You: Please fact-check bad_AI_essay.md
 
 Claude: I'll fact-check your draft now.
 
 [Claude reads your file, checks sources, and generates a report]
 
-📋 FACT-CHECK REPORT
-━━━━━━━━━━━━━━━━━━━━
-✅ Citation 1: Verified - URL accessible, quote accurate
-⚠️ Citation 2: Warning - Publication date unclear
-❌ Citation 3: Error - URL returns 404 (page not found)
-...
-```
+📋 FACT-CHECK REPORT ━━━━━━━━━━━━━━━━━━━━ ✅ Citation 1: Verified - URL
+accessible, quote accurate ⚠️ Citation 2: Warning - Publication date unclear ❌
+Citation 3: Error - URL returns 404 (page not found) ...
+
+Video:
 
 ---
 
-## Optional: Web-Check Add-On (Advanced)
+## Magic Mode MCP Setup
 
 If you want Claude to open web links for you, add an MCP server like
-**HyperBrowser**. If this sounds confusing, skip it—the fact-checker still
-works.
+**HyperBrowser**. Setup details are in `CLAUDE.md` under "MCP Server
+Configuration."
 
 - With HyperBrowser: Claude can open URLs, read pages, and verify quotes.
-- Without it: Claude tells you which links to check yourself.
-
-Setup details are in `CLAUDE.md` under "MCP Server Configuration."
+- Without it: Claude provides links to check yourself.
+- Standards for how these citations are chosen are detailed in @CLAUDE.md Fact
+  Checking Workflow>Source Classification.
 
 ---
 
-## Important Disclaimers
+# Disclaimers
 
 - Provided "AS IS" without warranty. This tool helps but does not replace your
   own verification.
 - You are responsible for all claims before publication.
 - ⚠️ The repo creator flags U.S. federal government data published after January
-  2025 as unreliable. Data before January 2025 is considered usable with
+  2025 as unreliable, due to mass layoffs of federal employees and other
+  unprecedented interference. Data before January 2025 is considered usable with
   standard checks.
-
----
-
-## Quick Reference (repeat use)
-
-1. Open Warp.
-2. `cd ` then drag the `fact-checker-skill-test-main` folder. Press Enter.
-3. `claude`
-4. First time only: `/init`
-5. Fact-check: `Please fact-check myDraft.md`
 
 ---
 
