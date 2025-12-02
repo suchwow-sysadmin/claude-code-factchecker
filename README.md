@@ -1,13 +1,13 @@
 # 🐾 Claude Code Factchecker
 
-> Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai/)
+> Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai)
 > for nuanced, context-sensitive, AI-powered fact-checking that doesn’t just
 > check a link—**it browses, crawls, clicks, and understands.**
 
 > **Skip to [Easy Mode](#easy-mode-no-mcp-server) below if you're not familiar
 > with MCP! (Manual review of Claude-provided URLs strongly advised.)**
 
-> This is not an app. It is a folder of instructions Claude reads. Read more
+> **This is not an app**. It is a set of instructions Claude reads. Read more
 > here on Claude [_skills_](https://claude.com/blog/skills).
 
 ---
@@ -44,17 +44,19 @@
   review URLs manually.
 
 **Claude Code can directly assist you with installing, connecting, and
-understanding MCP servers. Just ask!**
+understanding MCP servers. Just ask it!**
 
 ---
 
-## Demo Files
+## 🍌 Demo File: "Cavendish Catastrophe"
+
+As always, we strive to entertain.
 
 - [bad_Ai_essay.md](./Bad_Ai_Essay.md)
 
 ## What You Need (Check These First)
 
-- Anthropic Claude subscription ($20/month) - [Sign up](https://claude.ai/)
+- Anthropic Claude subscription (~$20/month) - [Sign up](https://claude.ai/)
 - A terminal (typing window). These steps use the free Warp Terminal
   ([download](https://www.warp.dev/)).
 - This fact-checker folder, unzipped, on your Desktop
@@ -164,11 +166,14 @@ Video:
 
 ## Magic Mode MCP Setup
 
-If you want Claude to open web links for you, add an MCP server like
-**HyperBrowser**. Setup details are in `CLAUDE.md` under "MCP Server
-Configuration."
+If you want Claude to interact with web pages for you (use search fields,
+awareness of situational context changes, etc.), add an MCP server like
+HyperBrowser, Browserbase, or Firecrawl. Only Hyperbrowser has been tested.
 
-- With HyperBrowser: Claude can open URLs, read pages, and verify quotes.
+Setup details are in `CLAUDE.md` under "MCP Server Configuration."
+
+- With HyperBrowser/MCP: Claude can open URLs, read pages, verify queried data,
+  verify quotes, and much more.
 - Without it: Claude provides links to check yourself.
 - Standards for how these citations are chosen are detailed in @CLAUDE.md Fact
   Checking Workflow>Source Classification.
@@ -177,21 +182,28 @@ Configuration."
 
 # Disclaimers
 
-- Provided "AS IS" without warranty. This tool helps but does not replace your
-  own verification.
+- Provided "AS IS" without warranty. This tool **does not replace your own
+  verification**.
 - You are responsible for all claims before publication.
+
 - ⚠️ The repo creator flags U.S. federal government data published after January
   2025 as unreliable, due to mass layoffs of federal employees and other
-  unprecedented interference. Data before January 2025 is considered usable with
-  standard checks.
+  unprecedented interference.
+- Data prior to January 2025 is considered usable, if not edited.
 
----
+You are free to clone this repo and modify it with different facts aligning to a
+parallel universe of your imagination.
+
+Our goal is to maintain adherence to consensus reality. We will likely make
+occasional improvements and optimizations in the pursuit of that goal, and
+intend to correct any unintended and objective mistakes. Please open an issue if
+you find some.
 
 ## License
 
 MIT License - Free to use, modify, and share.
 
-**Version**: 1.0 | **Updated**: November 2025 | README audited by Ultra-Doc
+**Version**: 1.0 | **Updated**: December 2025 | README audited by Ultra-Doc
 https://github.com/justfinethanku/ultra-doc
 
 Need help? Open an issue on GitHub. Pull requests and contributions are welcome.
