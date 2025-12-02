@@ -122,7 +122,7 @@ Did it work? You see a report with ✅ ⚠️ ❌ next to sources and claims.
 ## Example Session
 
 ```
-You: Please fact-check essay.md
+You: Please fact-check bad_AI_essay.md
 
 Claude: I'll fact-check your draft now.
 
