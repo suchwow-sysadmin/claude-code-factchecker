@@ -48,14 +48,6 @@ understanding MCP servers. Just ask it!**
 
 ---
 
-## 🍌 Demo File: "Cavendish Catastrophe"
-
-We strive to entertain.
-
-- [bad_Ai_essay.md](./Bad_Ai_Essay.md)
-
-More fully-featured demo videos are planned.
-
 ## What You Need To Get Started
 
 - Anthropic Claude subscription/trial (~$20/month if no free trial, very much
@@ -127,7 +119,15 @@ You only do `/init` once per folder.
 
 ### Step 6: Test Fact-Checking
 
-1. In Claude, say: `Please fact-check bad_AI_essay.md`
+#### 🍌 Demo File: "Cavendish Catastrophe"
+
+This comes packaged with the zip file.
+
+- [bad_Ai_essay.md](./Bad_Ai_Essay.md)
+
+More fully-featured demo videos are planned.
+
+1. In Claude, type: `Please fact-check bad_AI_essay.md`
 2. Claude will read the file and give you a report - with citations!
 
 Did it work? You see a report with ✅ ⚠️ ❌ next to sources and claims.
@@ -158,7 +158,7 @@ Warp's built-in Markdown viewer for best results._
 
 ---
 
-# Demo Session
+# Demo Session: Mode-Independent
 
 You: Please fact-check bad_AI_essay.md
 
