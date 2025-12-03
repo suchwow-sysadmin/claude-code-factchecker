@@ -166,11 +166,17 @@ Claude: I'll fact-check your draft now.
 
 [Claude reads your file, checks sources, and generates a report]
 
+Video:
+
+
+https://github.com/user-attachments/assets/5de6132f-8dcf-41e8-bba1-8450aaa8b3bb
+
+
+
 📋 FACT-CHECK REPORT ━━━━━━━━━━━━━━━━━━━━ ✅ Citation 1: Verified - URL
 accessible, quote accurate ⚠️ Citation 2: Warning - Publication date unclear ❌
 Citation 3: Error - URL returns 404 (page not found) ...
 
-Video:
 
 ---
 
