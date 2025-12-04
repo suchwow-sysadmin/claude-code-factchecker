@@ -73,6 +73,9 @@ understanding MCP servers. Just ask it!**
 3. Open your Downloads folder. Double-click the ZIP to unzip it.
 4. Drag `fact-checker-skill-test-main` onto your **Desktop**.
 
+![dl](https://github.com/user-attachments/assets/e9c05cb4-7cb8-4645-a364-1ce5d26373e1)
+
+
 Did it work? You should see the folder on your Desktop with files like
 `README.md` and `.claude`.
 
