@@ -128,7 +128,12 @@ visit [claude.ai/code](https://claude.ai/code) and follow the prompts again.
 2. Press Enter.
 
 Did it work? Claude says it scanned the folder and found the fact-checker skill.
-You only do `/init` once per folder.
+You never need to run `/init` again within the same folder, assuming your draft stays there. This installs the skill. 
+You only need to to run /init if you begin working in a different folder with content you'd like to fact check that no CLAUDE.md file exists in. 
+CLAUDE.md is also the agent's memory file. It needs to live at the first level of any folder - not in any subfolders. 
+Once created, Claude writes content to it for its own use. It needs to stay in any folder permanently for Claude to correctly operate.
+
+![init](https://github.com/user-attachments/assets/6bef4d29-8ba7-4e9e-836d-e868331cda33)
 
 ### Step 6: Test Fact-Checking
 
