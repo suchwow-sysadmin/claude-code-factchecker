@@ -70,10 +70,12 @@ understanding MCP servers. Just ask it!**
 
 1. On this GitHub page, click the green **Code** button.
 2. Click **Download ZIP**.
-3. Open your Downloads folder. Double-click the ZIP to unzip it.
-4. Drag `fact-checker-skill-test-main` onto your **Desktop**.
 
-![dl](https://github.com/user-attachments/assets/e9c05cb4-7cb8-4645-a364-1ce5d26373e1)
+![dl2](https://github.com/user-attachments/assets/642b4aa0-a686-4cae-a4fb-17924c6b4f27)
+
+4. Open your Downloads folder. Double-click the ZIP to unzip it.
+5. Drag `fact-checker-skill-test-main` onto your **Desktop**.
+
 
 
 Did it work? You should see the folder on your Desktop with files like
