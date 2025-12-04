@@ -1,14 +1,17 @@
-# ✅ Claude Code Fact Checker
+# ✅ Claude Code Fact Checker + Research Assistant
 
-> Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai)
-> for nuanced, context-sensitive, AI-powered fact-checking that doesn’t just
-> check a link—**it browses, crawls, clicks, and understands.**
+Plug in a live MCP server like [Hyperbrowser] (https://www.hyperbrowser.ai) for
+nuanced, context-sensitive, AI-powered fact-checking research assistant that
+doesn’t just check a link—**it browses, crawls, clicks, _performs extra research
+to evaluate statements_, and _understands._**
 
-> **Skip to [Easy Mode](#easy-mode-no-mcp-server) below if you're not familiar
-> with MCP! (Manual review of Claude-provided URLs strongly advised.)**
+**Skip to [Easy Mode](#easy-mode-no-mcp-server) below if you're not familiar
+with MCP! (Manual review of Claude-provided URLs strongly advised.)**
 
-> **This is not an app**. It is a set of instructions Claude reads. Read more
-> here on Claude [_skills_](https://claude.com/blog/skills).
+> **This is not an app**. It is a set of instructions that expands Claude's
+> already-significant capabilities to save massive amounts of time while also
+> producing an high-standard output. Read more here on Claude
+> [_skills_](https://claude.com/blog/skills).
 
 ---
 
@@ -129,19 +132,41 @@ visit [claude.ai/code](https://claude.ai/code) and follow the prompts again.
 
 Did it work? Claude says it scanned the folder and found the fact-checker skill.
 
-You never need to run `/init` again within the same folder, assuming your draft stays there. This installs the skill. 
+You never need to run `/init` again within the same folder, assuming your draft
+stays there. This installs the skill.
 
-You only need to to run /init if you begin working in a different folder with content you'd like to fact check that no CLAUDE.md file exists in. 
+You only need to to run /init if you begin working in a different folder with
+content you'd like to fact check that no CLAUDE.md file exists in.
 
-CLAUDE.md is also the agent's memory file. It needs to live at the first level of any folder - not in any subfolders. 
+CLAUDE.md is also the agent's memory file. It needs to live at the first level
+of any folder - not in any subfolders.
 
-Once created, Claude writes content to it for its own use. It needs to stay in any folder permanently for Claude to correctly operate.
+Once created, Claude writes content to it for its own use. It needs to stay in
+any folder permanently for Claude to correctly operate.
 
 ![init](https://github.com/user-attachments/assets/6bef4d29-8ba7-4e9e-836d-e868331cda33)
 
-Claude will find some redundancies in the README and the fact-checking instructions, and consolidate them. This design is intentional.
+### Step 6: Allow Claude to Consolidate Files
 
-### Step 6: Test Fact-Checking
+> Claude will find some redundancies in the original CLAUDE.md file and the
+> fact-checking instructions, and consolidate them. This design is intentional.
+
+`However, I notice the current CLAUDE.md is quite verbose. Following the /init instructions to avoid repetition and focus on "big picture" architecture, I should create a more concise version that focuses on what's truly essential for future Claude instances.`
+
+Press `2` to allow the Claude agent to consolidate its memory file.
+
+> Note: This skill is an _enormous_ context window hog. Keep an eye on token
+> usage and run /compact early and often, using /export to create session
+> transcripts so that the memory file doesn't lose context on your project's
+> progress.
+
+> Note: Claude routinely adds and removes content from its CLAUDE.md memory
+> file - but it should always ask permission prior to doing so. This needs to
+> happen - but it's critical to ensure that you back up your projects elsewhere,
+> as occasionally mistakes can happen, and that can ruin the usefulness of these
+> features.
+
+### Step 7: Test Fact-Checking
 
 #### 🍌 Demo File: "Cavendish Catastrophe"
 
@@ -180,23 +205,19 @@ Warp's built-in Markdown viewer for best results._
 
 # Demo Session: Mode-Independent
 
-You: Please fact-check bad_AI_essay.md
+You: `Please fact-check bad_AI_essay.md`
 
-Claude: I'll fact-check your draft now.
+Claude: `I'll fact-check your draft now.`
 
 [Claude reads your file, checks sources, and generates a report]
 
 Video:
 
-
 https://github.com/user-attachments/assets/5de6132f-8dcf-41e8-bba1-8450aaa8b3bb
 
+## 📋 FACT-CHECK REPORT
 
-
-📋 FACT-CHECK REPORT ━━━━━━━━━━━━━━━━━━━━ ✅ Citation 1: Verified - URL
-accessible, quote accurate ⚠️ Citation 2: Warning - Publication date unclear ❌
-Citation 3: Error - URL returns 404 (page not found) ...
-
+See [sample_factcheck_report-badAIessay](sample_factcheck_report-badAIessay).
 
 ---
 
