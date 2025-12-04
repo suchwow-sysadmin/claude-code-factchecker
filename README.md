@@ -71,7 +71,7 @@ understanding MCP servers. Just ask it!**
 
 ## Step 1: Get the Folder
 
-1. On this GitHub page, click the green **Code** button.
+1. On this GitHub page, click the colored **Code** button.
 2. Click **Download ZIP**.
 
 ![dl2](https://github.com/user-attachments/assets/642b4aa0-a686-4cae-a4fb-17924c6b4f27)
@@ -138,13 +138,13 @@ stays there. This installs the skill.
 You only need to to run /init if you begin working in a different folder with
 content you'd like to fact check that no CLAUDE.md file exists in.
 
+![init](https://github.com/user-attachments/assets/6bef4d29-8ba7-4e9e-836d-e868331cda33)
+
 CLAUDE.md is also the agent's memory file. It needs to live at the first level
 of any folder - not in any subfolders.
 
 Once created, Claude writes content to it for its own use. It needs to stay in
 any folder permanently for Claude to correctly operate.
-
-![init](https://github.com/user-attachments/assets/6bef4d29-8ba7-4e9e-836d-e868331cda33)
 
 ### Step 6: Allow Claude to Consolidate Files
 
