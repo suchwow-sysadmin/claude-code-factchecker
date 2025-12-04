@@ -74,7 +74,7 @@ understanding MCP servers. Just ask it!**
 ![dl2](https://github.com/user-attachments/assets/642b4aa0-a686-4cae-a4fb-17924c6b4f27)
 
 4. Open your Downloads folder. Double-click the ZIP to unzip it.
-5. Drag `fact-checker-skill-test-main` onto your **Desktop**.
+5. Drag `claude-code-fact-checker-main` onto your **Desktop**.
 
 Did it work? You should see the folder on your Desktop with files like
 `README.md` and `.claude`.
@@ -88,10 +88,14 @@ Did it work? You should see the folder on your Desktop with files like
 
 Did it work? Warp shows a dark window with a blinking cursor.
 
+<img width="1222" height="430" alt="regterm" src="https://github.com/user-attachments/assets/161e9372-c543-408c-81ac-5942e544583e" />
+
+<img width="933" height="420" alt="agentmode" src="https://github.com/user-attachments/assets/aa35cc98-4a0c-4b6d-9257-d684fd5b15de" />
+
 ### Step 3: Point Warp at the Folder
 
 1. In Warp, type `cd ` (type `cd` then a space).
-2. Drag the `fact-checker-skill-test-main` folder from your Desktop into Warp.
+2. Drag the `claude-code-fact-checker-main` folder from your Desktop into Warp.
 3. Press Enter.
 
 Did it work? The line before the cursor should end with the folder name. No
@@ -128,7 +132,7 @@ You only do `/init` once per folder.
 
 This comes packaged with the zip file.
 
-- [bad_Ai_essay.md](./Bad_Ai_Essay.md)
+- [bad_AI_essay.md](./Bad_AI_Essay.md)
 
 More fully-featured demo videos are planned.
 
