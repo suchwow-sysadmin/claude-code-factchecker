@@ -190,19 +190,6 @@ Warp's built-in Markdown viewer for best results._
 
 ---
 
-## Commands You Will Use
-
-| Command/Action                 | What it does                                       |
-| ------------------------------ | -------------------------------------------------- |
-| `claude`                       | Starts Claude Code in the terminal                 |
-| `/init`                        | Scans the folder so Claude learns the fact-checker |
-| "Please fact-check [filename]" | Runs the fact-checker on your file                 |
-| `/memory`                      | Shows what Claude remembers                        |
-| `/help`                        | Shows all commands                                 |
-| `/exit` or `Ctrl + C`          | Stops Claude Code                                  |
-
----
-
 # Demo Session: Mode-Independent
 
 You: `Please fact-check bad_AI_essay.md`
@@ -217,7 +204,22 @@ https://github.com/user-attachments/assets/5de6132f-8dcf-41e8-bba1-8450aaa8b3bb
 
 ## 📋 FACT-CHECK REPORT
 
-See [sample_factcheck_report-badAIessay](sample_factcheck_report-badAIessay).
+See
+[sample_factcheck_report-badAIessay.md](./sample_factcheck_report-badAIessay.md).
+
+---
+
+## Commands You Will Use
+
+| Command/Action                 | What it does                                       |
+| ------------------------------ | -------------------------------------------------- |
+| `claude`                       | Starts Claude Code in the terminal                 |
+| `/init`                        | Scans the folder so Claude learns the fact-checker |
+| "Please fact-check [filename]" | Runs the fact-checker on your file                 |
+| `/memory`                      | Shows what Claude remembers                        |
+| `/export`                      | Export session transcript                          |
+| `/help`                        | Shows all commands                                 |
+| `/exit` or `Ctrl + C`          | Stops Claude Code                                  |
 
 ---
 
