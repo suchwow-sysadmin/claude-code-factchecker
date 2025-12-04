@@ -76,10 +76,10 @@ understanding MCP servers. Just ask it!**
 4. Open your Downloads folder. Double-click the ZIP to unzip it.
 5. Drag `fact-checker-skill-test-main` onto your **Desktop**.
 
-
-
 Did it work? You should see the folder on your Desktop with files like
 `README.md` and `.claude`.
+
+![unzip](https://github.com/user-attachments/assets/21955ec7-8bce-4578-8b57-2581ea8d3d0b)
 
 ### Step 2: Open Warp
 
