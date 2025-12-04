@@ -101,6 +101,8 @@ Did it work? Warp shows a dark window with a blinking cursor.
 Did it work? The line before the cursor should end with the folder name. No
 error message means success.
 
+![cd](https://github.com/user-attachments/assets/dff42dc1-32b8-48de-a0e1-a8a8636aa302)
+
 ### Step 4: Install Claude Code (first time only)
 
 1. Type `claude` and press Enter.
@@ -112,6 +114,8 @@ error message means success.
 
 Did it work? Typing `claude` now shows a Claude greeting. If you see errors,
 visit [claude.ai/code](https://claude.ai/code) and follow the prompts again.
+
+![claudeterm](https://github.com/user-attachments/assets/611fb19b-4571-45b0-97b2-e0fdd132e643)
 
 ### Step 5: Initialize the Fact-Checker (first time only)
 
