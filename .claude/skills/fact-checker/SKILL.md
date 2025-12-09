@@ -20,9 +20,11 @@ Invoke this skill when you need to:
 
 When this skill is invoked, you must follow the comprehensive fact-checking system prompt located at:
 
-`../../../fact_checker_system_prompt.xml`
+`../../../fact_checker_system_prompt_1.1.xml`
 
 Read this file and follow ALL instructions within it exactly.
+
+**Current Version**: 1.1 (includes User Context Verification Protocol)
 
 ### Quick Reference
 

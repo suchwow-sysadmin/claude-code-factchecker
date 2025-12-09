@@ -239,6 +239,87 @@ Setup details are in `CLAUDE.md` under "MCP Server Configuration."
 
 ---
 
+## Updating the Fact Checker
+
+The fact-checking system is versioned and can be updated as improvements are
+made.
+
+### Current System Files
+
+- **Active System Prompt**: `fact_checker_system_prompt_1.1.xml` (Current
+  version)
+- **Skill Definition**: `.claude/skills/fact-checker/SKILL.md`
+- **Protocol Specification**:
+  `FACT_CHECKER_USER_CONTEXT_VERIFICATION_PROTOCOL.md`
+- **Archived Versions**: `zArchive/fact_checker_system_prompt_1.0.xml`
+
+### Version 1.1 Features (Current)
+
+- **User Context Verification Protocol**: Prevents incorporation of unverified
+  user assertions
+- **Image Search Integration**: Uses `brave_image_search` for visual
+  verification
+- **Enhanced Claim Type E**: USER-PROVIDED CONTEXT (Verified) taxonomy
+- **4-Step Verification Workflow**: Document → Verify → Assess → Update
+- **Comprehensive Test Scenarios**: Validation framework for updates
+
+### How to Update to a New Version
+
+#### As Repo Contributor
+
+When a new version is released:
+
+1. **Archive the current version**:
+
+   - Rename current `fact_checker_system_prompt_X.X.xml` to include version
+     number
+   - Move to `zArchive/` folder
+
+2. **Install the new version**:
+
+   - Place new system prompt file in root directory
+   - Keep version number in filename (e.g.,
+     `fact_checker_system_prompt_1.2.xml`)
+
+3. **Update references**:
+
+   - Request that Claude both:
+     - Edit `.claude/skills/fact-checker/SKILL.md` to point to new file path
+     - Update this README's "Current System Files" section
+
+4. **Test**:
+   - Test with `bad_AI_essay.md`: `Please fact-check bad_AI_essay.md`
+   - Confirm new features are working
+
+#### As End User
+
+1. **Re-download the entire zip file**:
+   - Run `/init` in Claude Code to reload the skill
+   - Test with `bad_AI_essay.md`: `Please fact-check bad_AI_essay.md`
+   - Confirm new features are working
+2. **Clone repo**:
+   - Ask Warp Terminal to install Git (universal free lightweight version
+     tracking system) for you if necessary, and to register via HTTPS (this is
+     why we signed up for Warp with a Github account - so this is easy.)
+   - If you are confused, ask Claude to teach you what Git is. The desktop app
+     has a learning mode that is very helpful.
+   - Instead of downloading the zip file, from a folder you wish as a permanent
+     home for the fact-checker, tell Warp Terminal you wish to CLONE the repo so
+     as to PULL future updates.
+   - Simply run `git pull` from that folder occasionally to get updates
+
+### Version History
+
+| Version | Date       | Key Changes                                      |
+| ------- | ---------- | ------------------------------------------------ |
+| 1.1     | 2025-12-08 | User Context Verification Protocol, Image Search |
+| 1.0     | 2025-12-01 | Initial public release                           |
+
+For detailed version changes, see
+`FACT_CHECKER_USER_CONTEXT_VERIFICATION_PROTOCOL.md`
+
+---
+
 # Disclaimers
 
 - Provided "AS IS" without warranty. This tool **does not replace your own

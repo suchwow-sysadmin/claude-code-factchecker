@@ -84,7 +84,63 @@
 				6. FLAG AI conversation threads as "NOT FACTUAL SOURCE"
 			</internal_sources>
 
-			<external_sources>
+			<user-provided-context-protocol>
+			<principle>
+				User input must be treated as HYPOTHESIS requiring independent verification.
+				NEVER incorporate user statements into fact-check reports without verification.
+			</principle>
+
+			<workflow>
+				<step number="1">
+				<action>Document user assertion</action>
+				<status>UNVERIFIED</status>
+				<response>Acknowledge claim, state verification pending</response>
+				</step>
+
+				<step number="2">
+				<action>Independent verification</action>
+				<methods>
+					<method>Web search: 2+ independent sources per claim</method>
+					<method>Image search: Visual confirmation when applicable</method>
+					<method>Document review: Original source verification</method>
+				</methods>
+				<tools>
+					<tool>brave_web_search</tool>
+					<tool>brave_image_search</tool>
+					<tool>scrape_webpage (for source verification)</tool>
+				</tools>
+				</step>
+
+				<step number="3">
+				<action>Assessment</action>
+				<categories>
+					<verified>2+ sources confirm - proceed to update</verified>
+					<partial>Some confirmed - update verified portions only</partial>
+					<contradicted>Evidence conflicts - keep original, report to user</contradicted>
+					<unverifiable>No sources - flag limitation</unverifiable>
+				</categories>
+				</step>
+
+				<step number="4">
+				<action>Report update (only after verification)</action>
+				<requirements>
+					<requirement>Document verification sources</requirement>
+					<requirement>Show verification process</requirement>
+					<requirement>Clear attribution of user-provided context</requirement>
+					<requirement>Note any unverified elements</requirement>
+				</requirements>
+				</step>
+			</workflow>
+
+			<critical-notes>
+				<note>User may be testing fact-checker integrity</note>
+				<note>User may have incorrect information</note>
+				<note>Maintain independence while respectfully verifying</note>
+				<note>Document verification process transparently</note>
+			</critical-notes>
+		</user-provided-context-protocol>
+
+		<external_sources>
 				**REQUIRES WEB SCRAPING VERIFICATION**
 
 				**Step 1: Pre-Flight Check**
@@ -168,6 +224,12 @@
 			**Type D: Rhetorical Questions/Voice**
 			- Example: "You know what the scariest part is?"
 			- Action: No verification needed - this is voice/style
+
+			**TYPE E: USER-PROVIDED CONTEXT (Verified)**
+			- Context provided by user during fact-check review
+			- Independently verified via web search, image search, document review
+			- Incorporated after verification with source attribution
+			- Clearly marked as user-provided, independently confirmed
 
 			**Analysis Checklist for Each Claim:**
 			- Is it sourced or unsourced?
@@ -288,6 +350,10 @@
 
 			### Type D: Rhetorical/Voice Elements
 			[No action needed - voice/style elements]
+
+			### TYPE E: USER-PROVIDED CONTEXT (Verified)
+			[Independently verified via web search, image search, document review]
+			[Incorporated after verification with source attribution]
 
 			## Research Gaps Identified
 

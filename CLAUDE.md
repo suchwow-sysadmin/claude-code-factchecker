@@ -9,15 +9,18 @@ This is the **Fact-Checker Skill** for Claude Code - a specialized system for ve
 ### Directory Structure
 
 ```
-fact-checker-skill-test/
+claude-code-factchecker/
 ├── .claude/
 │   └── skills/
 │       └── fact-checker/
-│           └── SKILL.md              # Skill metadata and activation trigger
-├── fact_checker_system_prompt.xml   # Complete verification protocol (533 lines)
-├── bad_AI_essay.md                   # Sample test content
-├── README.md                         # User-facing documentation
-└── CLAUDE.md                         # This file
+│           └── SKILL.md                                    # Skill metadata and activation trigger
+├── fact_checker_system_prompt_1.1.xml                      # Current verification protocol (v1.1)
+├── FACT_CHECKER_USER_CONTEXT_VERIFICATION_PROTOCOL.md      # Protocol specification & versioning guide
+├── zArchive/
+│   └── fact_checker_system_prompt_1.0.xml                  # Archived v1.0
+├── bad_AI_essay.md                                         # Sample test content
+├── README.md                                               # User-facing documentation
+└── CLAUDE.md                                               # This file
 ```
 
 ## Architecture
@@ -29,11 +32,13 @@ fact-checker-skill-test/
    - Activation trigger: When user requests fact-checking
    - Points to the comprehensive system prompt
 
-2. **System Prompt** (`fact_checker_system_prompt.xml`)
-   - Complete fact-checking protocol (533 lines)
+2. **System Prompt** (`fact_checker_system_prompt_1.1.xml`)
+   - Complete fact-checking protocol (600 lines)
    - Source classification rules
    - URL verification protocol (5-step process)
-   - Claim type taxonomy (Type A/B/C/D)
+   - Claim type taxonomy (Type A/B/C/D/E)
+   - User Context Verification Protocol (new in v1.1)
+   - Image search verification integration (new in v1.1)
    - Report generation templates
 
 3. **Test Content** (`bad_AI_essay.md`)
